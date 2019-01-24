@@ -1,0 +1,257 @@
+[MUSIC]. 
+In this lecture we're going to talk about 
+the heart of information visualization, 
+data types and visual mappings. 
+So, the central problem in order to 
+visualize data is, is quite simple, we 
+need to map data sets to visual 
+attributes. 
+This is also known as data encoding. 
+And the process can be described in a 
+very straightforward manner. 
+One, you classify your data types, and 
+two, you determine which visual 
+attributes represent data types most 
+effectively. 
+Of course the devil is in the details. 
+Let's start with data types, there are 
+three basic data types, nominal, ordinal, 
+and quantitative, which can be further 
+subdivided into interval and ratio. 
+I'm going to explain each of these on the 
+next slide. 
+So, nominal data can be thought of labels 
+or names, an example is fruit. 
+Apples, oranges, peaches, pears will be 
+described as nominal data. 
+Ordinal data has an order associated with 
+it. 
+So, for example, the quality of meat 
+might be described as grade A, grade 
+double A, grade triple A. 
+There is an implicit order. 
+So, you can clearly say that grade triple 
+A is better than grade double A. 
+The two types of quantitative data. 
+Interval data is where the location of 
+zero is arbitrary. 
+So, dates are an example. 
+If you're looking at January 5, 2012 or 
+location for example. 
+Latitude 47, longitude 122 and these are 
+like a geometric point. 
+You can't compare them directly, but only 
+differences, that is, intervals, can be 
+compared. 
+And then finally you have ratio data, 
+which is where the zero is fixed. 
+And you can think of this as any physical 
+measurement, length, mass, counts and 
+amounts. 
+The origin is meaningful. 
+Let's talk a little bit more about the 
+differences between nominal, ordinal, and 
+quantitative data. 
+Sometimes it's not immediately clear 
+given an example, what data type that it 
+falls into. 
+So, one of the best ways to actually 
+identify data as nominal, ordinal, or 
+quantitative, is to look at what are the 
+operations that are permitted on this 
+data. 
+So nominal data, there really only two 
+operations that are permitted, either 
+equals or not equals. 
+For example with fruit, you can say that 
+oranges are not equal to apples, and 
+apples are equal to apples. 
+There's no other comparison that can be 
+made. 
+You can't say that oranges are somehow 
+better than apple. 
+Ordinal data has additional operations 
+besides equals and not equals. 
+You can now say that one is greater than 
+or less than another. 
+Or greater than or equal to, or less than 
+or equal to. 
+So, for example with the, the grades of 
+meat that we [INAUDIBLE], you can see 
+that that triple A is better than double 
+A, and vice versa. 
+Greater than, less than. 
+You can deal with that implicit ordering. 
+Now moving to quantitative data with 
+interval data, for example, dates. 
+Now you can subtract. 
+So you can measure distances or spans. 
+You can say that not only is January 6, 
+2012 after January 5, 2012, but you can 
+say the difference between those two 
+dates is one day. 
+And finally, coming to ratio data, where 
+the zero is fixed, now you can add 
+division or ratios. 
+You can measure ratios or proportions. 
+So, for example, if an object weighs 32 
+grams, you can say that it weighs twice 
+as much as another object that weighs 16 
+grams. 
+Alright, so that's the theory, now let's 
+put it into practice with an exercise. 
+I'm going to show you a spreadsheet and 
+I'd like you to think about which of the 
+columns in the spreadsheet are nominal, 
+ordinal or quantitative. 
+So, here we have a set of sepal and petal 
+lengths and widths for three species of 
+iris. 
+The first column, you have an id number, 
+then a case number. 
+Next, a species number, then a species 
+name, the organ, petal or sepal, the 
+width and length of that organ in 
+millimeters. 
+So, why don't you take some time and 
+think about which of these are nominal, 
+ordinal and quantitative. 
+You can see that its not as straight 
+forward as it might appear in the first 
+place, for example we have numbers here 
+that fall into the categories nominal, 
+ordinal and quantitative. 
+So, let's explain why each of these is 
+defined the way it is. 
+So, the quantitative is probably the 
+easiest. 
+The orange data, the width and the length 
+of the sepal and petal are quantitative. 
+You can say for example, that for the 
+first species the length is seven times 
+the width. 
+So, you can perform ratios and 
+proportions. 
+So it's quantitative data. 
+Now the first two, the ID number and the 
+case number are ordinal. 
+So why are they not quantitative? 
+Well, because it's really not something 
+where you can say the distance between 
+the ID number three and the ID number two 
+has any meaning. 
+But it clearly has an order. 
+The ID numbers were assigned in some 
+particular order. 
+So, therefore it's ordinal. 
+And the cases were assigned in a 
+particular order, but there's not 
+necessarily a meaning for the differences 
+between them. 
+So ID and the case numbers are ordinal. 
+Now we have the species number, the 
+species and the organ, which are nominal. 
+Well, it's probably pretty clear that the 
+species name, and the organ would be 
+nominal, because there names. 
+All you can do, is say whether they're 
+equal or not equal to each other. 
+You can't say that the sepal is somehow 
+greater than the petal. 
+So that, those are pretty easy. 
+But what about the species number? 
+Why isn't that ordinal? 
+And the answer to that is simply because 
+in this case, the species number is 
+simply a label. 
+There is no order to it. 
+It was assigned to the species simply as 
+a labeling convention. 
+Alright, so hopefully that has been a 
+useful example for you. 
+Alright. 
+So, moving on, we've now completed step 
+one of the process of information 
+visualization. 
+So, now let's describe how to do step 
+two, mapping data types to visual 
+attributes. 
+In 1967, Jacques Bertin, a French 
+cartographer made the first formalization 
+of visual language and the first attempt 
+at a theoretical foundation for 
+information visulaization. 
+He identified seven key visual 
+attributes, illustrated on the right hand 
+side of the page in zero, one, and two 
+dimensions. 
+And these seven key attributes are 
+position, size, value or lightness, 
+texture, color, orientation, and shape. 
+So, this is an important slide. 
+You should probably write down these 
+seven, these seven attributes or at least 
+save this slide. 
+So, now that we have taxonomies of both 
+data types and visual attributes, let's 
+talk about how we map one to the other. 
+So, Bertin offered the following 
+suggestions. 
+He said there were levels of organization 
+that you could consider. 
+Position can be used for nominal, ordinal 
+[LAUGH] or quantitative data as can size. 
+Now value or lightness can be used for 
+nominal or ordinal data and perhaps for 
+quantitative data although it's not quite 
+as clear. 
+And texture can be used for nominal data, 
+maybe for ordinal data. 
+You could imagine a denser texture might 
+be seen as having some order over a, a 
+lighter a, a less dense texture. 
+And then finally color, orientation, and 
+shape can really only be used for nominal 
+data. 
+You can't really say that one color is 
+greater than another, or that one 
+orientation is less than another, or that 
+a, a, a shape, a star, say, is me, is 
+more than or less than a circle. 
+And further work that involves decades of 
+research in psychology and psychophysics, 
+have established this hierarchy of 
+perceptual properties. 
+Humans can detect differences in position 
+most accurately, then length, then angle 
+on slope, then area, then volume. 
+And least of all color and density. 
+So, when you're assigning these 
+attributes to your data. 
+Make sure to choose position for your 
+most important quantitative data. 
+And save color and density for nominal 
+data. 
+A final note on color. 
+Value can be perceived as ordered, so you 
+can encode ordinal variables. 
+In other words, you see this strip that 
+goes from black to white, where value is 
+increasing, you can see that there is an 
+order to these colors. 
+You can also even encode continuous 
+values with a gray scale mapping, 
+although not as well. 
+The hue is normally perceived as 
+un-ordered. 
+So, you always only want to encode 
+nominal variables using color. 
+The is no order to the colors on the 
+bottom of the slide. 
+So, this was a very brief lecture on the 
+central important problem of information 
+visualization. 
+In the next lecture, we'll look at 
+exercises where you can actually put this 
+theory into practice. 
+

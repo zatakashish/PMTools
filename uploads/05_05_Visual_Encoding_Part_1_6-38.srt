@@ -1,0 +1,405 @@
+1
+00:00:05,613 --> 00:00:07,565
+[MUSIC]. 
+Last time, we talked about data types, 
+
+2
+00:00:07,565 --> 00:00:11,469
+dimensions and how to map data to visual 
+attribute based on the number of data 
+
+3
+00:00:11,469 --> 00:00:15,812
+dimensions. 
+Clearly there's a large design space for 
+
+4
+00:00:15,812 --> 00:00:19,704
+this visual encoding. 
+Information visualization is about 
+
+5
+00:00:19,704 --> 00:00:24,150
+choosing the most effective visual 
+encoding for a given data set. 
+
+6
+00:00:24,150 --> 00:00:32,750
+In this lecture, we're going to describe 
+how to do that. 
+
+7
+00:00:32,750 --> 00:00:35,484
+We saw earlier that there are different 
+data types. 
+
+8
+00:00:35,484 --> 00:00:38,143
+And those can be mapped to a set of 
+visual attributes. 
+
+9
+00:00:38,143 --> 00:00:41,786
+And some mapping are better than others. 
+So now we have a challenge. 
+
+10
+00:00:41,786 --> 00:00:45,632
+How do we pick the best mapping of all 
+possibilities? 
+
+11
+00:00:45,632 --> 00:00:50,030
+So in order to do this we're going to 
+follow three basic principles. 
+
+12
+00:00:50,030 --> 00:00:54,097
+Importance ordering, expressiveness and 
+consistency. 
+
+13
+00:00:54,097 --> 00:00:58,681
+This was first described by Jock McKinley 
+in 1986. 
+
+14
+00:00:58,681 --> 00:01:02,748
+So importance ordering has to do with 
+encoding the most important information 
+
+15
+00:01:02,748 --> 00:01:07,477
+in a most perceptually active way. 
+Expressiveness has to do with depicting 
+
+16
+00:01:07,477 --> 00:01:12,690
+all the data and only the data. 
+And finally consistency means the 
+
+17
+00:01:12,690 --> 00:01:16,480
+property of the image, the visual 
+attributes should match the properties of 
+
+18
+00:01:16,480 --> 00:01:19,530
+the data. 
+I'll go into more detail on how to do 
+
+19
+00:01:19,530 --> 00:01:26,540
+this on the following slides. 
+We'll start with importance ordering. 
+
+20
+00:01:26,540 --> 00:01:31,320
+We've seen this slide before. 
+Now as we discussed earlier, decades of 
+
+21
+00:01:31,320 --> 00:01:34,930
+research have taught us that certain 
+visual attributes more accurately 
+
+22
+00:01:34,930 --> 00:01:37,498
+represent quantitative data to the human 
+brain. 
+
+23
+00:01:37,498 --> 00:01:46,990
+Mackinlay defined expressiveness in the 
+following manner: he said a set of facts 
+
+24
+00:01:46,990 --> 00:01:51,120
+is expressible in a visual language if 
+the sentences: i.e the visualizations in 
+
+25
+00:01:51,120 --> 00:01:57,110
+the language express all the facts in the 
+set of data and only the facts in the 
+
+26
+00:01:57,110 --> 00:02:00,430
+data. 
+So what does this mean? 
+
+27
+00:02:01,460 --> 00:02:06,240
+Well, using color hue we cannot express 
+the fact that one item is greater than 
+
+28
+00:02:06,240 --> 00:02:09,688
+another. 
+So color hue simply can't represent 
+
+29
+00:02:09,688 --> 00:02:11,080
+ordinal data. 
+Ordinal or quantitative data. 
+
+30
+00:02:15,880 --> 00:02:19,470
+So color hues simply can't represent 
+ordinal or quantitative data. 
+
+31
+00:02:19,470 --> 00:02:28,390
+It's best you use phenomenal data. 
+On the other hand you don't want to 
+
+32
+00:02:28,390 --> 00:02:32,590
+express facts that are not in the data. 
+So a length is interpreted as a 
+
+33
+00:02:32,590 --> 00:02:37,130
+quantitative value. 
+In this incorrect use of a bar chart, the 
+
+34
+00:02:37,130 --> 00:02:40,200
+length of the bars say something untrue 
+about the data. 
+
+35
+00:02:41,670 --> 00:02:47,930
+So on the x axis we have the national 
+origin of these cars, now on the y axis 
+
+36
+00:02:47,930 --> 00:02:52,250
+the make and model. 
+Now the length of the bars suggests an 
+
+37
+00:02:52,250 --> 00:02:57,360
+ordering on the axis. 
+So it implies that somehow Germany is 
+
+38
+00:02:57,360 --> 00:03:02,480
+greater than the USA. 
+So therefore using bars for nominal data 
+
+39
+00:03:02,480 --> 00:03:11,165
+is an incorrect choice. 
+Number three, we have consistency. 
+
+40
+00:03:11,165 --> 00:03:15,920
+The properties of the image, the visual 
+attributes should match the properties of 
+
+41
+00:03:15,920 --> 00:03:18,930
+the data. 
+What this means, is you don't want to do 
+
+42
+00:03:18,930 --> 00:03:23,110
+something like mapping one dimensional 
+data to two or three dimensional visual 
+
+43
+00:03:23,110 --> 00:03:27,530
+representations. 
+This diagram represents why that is not a 
+
+44
+00:03:27,530 --> 00:03:30,990
+good idea. 
+So here we have the price per barrel of 
+
+45
+00:03:30,990 --> 00:03:36,070
+oil represented as the height of a three 
+dimensional barrel. 
+
+46
+00:03:36,070 --> 00:03:39,710
+You can see the obvious problem here. 
+Look at 1974. 
+
+47
+00:03:39,710 --> 00:03:50,180
+The price is $10.95 and then for 1979, 
+the price is $13.34. 
+
+48
+00:03:50,180 --> 00:03:56,620
+Well this is less than a 30% increase. 
+And yet the 1979 barrel looks 
+
+49
+00:03:56,620 --> 00:04:00,346
+significantly larger than the 1974 
+barrel. 
+
+50
+00:04:00,346 --> 00:04:03,408
+So clearly this is an inconsistent 
+representation. 
+
+51
+00:04:03,408 --> 00:04:08,320
+The three-dimensional representation is 
+implying something false about the 
+
+52
+00:04:08,320 --> 00:04:14,100
+underlying data. 
+Let's move to a data encoding exercise. 
+
+53
+00:04:14,100 --> 00:04:19,430
+Here we have a data set of cars. 
+We have the model on the first column. 
+
+54
+00:04:19,430 --> 00:04:24,906
+The country of origin, the year, the 
+number of cylinders, the horsepower, the 
+
+55
+00:04:24,906 --> 00:04:28,640
+miles per gallon and finally the weight 
+in pounds. 
+
+56
+00:04:29,900 --> 00:04:33,210
+I would like you to create a 
+visualization that encodes all seven 
+
+57
+00:04:33,210 --> 00:04:37,820
+dimensions in this data set. 
+Make the perceptually appropriate choices 
+
+58
+00:04:37,820 --> 00:04:42,750
+and be prepared to explain. 
+I will describe the steps you need to do 
+
+59
+00:04:42,750 --> 00:04:47,940
+and show you Bertin's examples once more. 
+So step one the terminal which columns 
+
+60
+00:04:47,940 --> 00:04:51,287
+represents nominal, ordinal or quantative 
+data. 
+
+61
+00:04:51,287 --> 00:04:56,720
+Step two review the transvisual 
+attributes on the next slide and assign 
+
+62
+00:04:56,720 --> 00:05:00,115
+the most perceptually appropriate choices 
+to each data set. 
+
+63
+00:05:00,115 --> 00:05:05,500
+Step three create a visualization that 
+encodes as many of the seven dimensions 
+
+64
+00:05:05,500 --> 00:05:08,140
+as you can. 
+Don't worry if you can't get all of them 
+
+65
+00:05:08,140 --> 00:05:13,407
+but, but do try to do so. 
+To review here are Bertin's visual 
+
+66
+00:05:13,407 --> 00:05:21,430
+attributes. 
+Position, size, value, texture, color, 
+
+67
+00:05:21,430 --> 00:05:26,650
+orientation and shape. 
+Are you done? 
+
+68
+00:05:26,650 --> 00:05:28,770
+Here's one attempt made by one of my 
+students. 
+
+69
+00:05:32,040 --> 00:05:36,210
+So this is an attempt at encoding seven 
+variables from the cars dataset in a 
+
+70
+00:05:36,210 --> 00:05:41,260
+single visualization. 
+So this student chose to put two of the 
+
+71
+00:05:41,260 --> 00:05:45,545
+quantitative variables, horsepower and 
+miles per gallon on the x and y axis. 
+
+72
+00:05:45,545 --> 00:05:52,240
+The third ratio data weight he encoded 
+with area of the marks. 
+
+73
+00:05:53,380 --> 00:05:58,419
+Not a bad choice since you, you can only 
+put two of those ratio variables on axes. 
+
+74
+00:05:59,840 --> 00:06:06,440
+He also chose to encode cylinders, which 
+are quantitative integral data by using 
+
+75
+00:06:06,440 --> 00:06:11,210
+the shape of the mark. 
+And then finally he used color hue for 
+
+76
+00:06:11,210 --> 00:06:16,240
+the region, Europe, Japan or US. 
+And color value or lightness for the 
+
+77
+00:06:16,240 --> 00:06:20,740
+year. 
+Additionally in his visualization you can 
+
+78
+00:06:20,740 --> 00:06:26,020
+mouse over each of the marks and the name 
+of the model of the car would pop-up. 
+
+79
+00:06:26,020 --> 00:06:28,895
+So, what do you think of this 
+visualization? 
+
+80
+00:06:28,895 --> 00:06:34,190
+What works, what doesn't and what could 
+you do better? 
+
+81
+00:06:35,910 --> 00:06:37,740
+I'll leave that critique as an exercise 
+for you. 
+

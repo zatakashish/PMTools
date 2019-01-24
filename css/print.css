@@ -1,0 +1,22 @@
+
+
+@media print{
+    
+    
+    #navbarNavAltMarkup{
+        display:none;
+    }
+    a{
+        display:none;
+    }
+    h4{
+        display:none;
+    }
+    #reportbutton2{
+        display:none;
+    }
+    
+    #reportbutton3{
+        display:none;
+    }
+}

@@ -1,0 +1,43 @@
+[{
+	"value":"Open_Status",
+	"text":"Open",
+	"group":"Status"
+},{
+	"value":"Inprogress_Status",
+	"text":"In Progress",
+	"group":"Status"
+},{
+	"value":"Closed_Status",
+	"text":"Close",
+	"group":"Status"
+},{
+	"value":"Reopened_Status",
+	"text":"Re-Open",
+	"group":"Status"
+},{
+	"value":"Major_Priority",
+	"text":"Major",
+	"group":"Priority"
+},{
+	"value":"Minor_Priority",
+	"text":"Minor",
+	"group":"Priority"
+},{
+	"value":"Critical_Priority",
+	"text":"Critical",
+	"group":"Priority"
+},{
+	"value":"Cosmetic_Priority",
+	"text":"Cosmetic",
+	"group":"Priority"
+},{
+	"value":"Blocker_Priority",
+	"text":"Blocker",
+	"group":"Priority"
+},
+{
+	"value":"Futurescope_Priority",
+	"text":"Futurescope",
+	"group":"Priority"
+}
+]

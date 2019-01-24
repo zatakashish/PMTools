@@ -1,0 +1,95 @@
+
+
+#heading{
+	text-align: center;
+        color:green;
+}
+
+.col-md-4{
+    text-align: center;
+    background-color: #e0ecff;
+    border: 1px solid ;
+    border-color: blue;
+}
+
+
+
+#addbutton{
+    margin-left: 50px;
+}
+
+#delbutton{
+    margin-left: 20px;
+}
+
+
+
+
+li{
+    text-align: center;
+    
+}
+
+label{
+    text-align: center;
+}
+
+#projectdetails{
+    text-align: center;
+}
+
+#exampleFormControlSelect1{
+    margin-left: 20%;
+}
+
+#selectuserbutton{
+    margin-left: 17%;
+    
+}
+
+#addinfo{
+
+margin-left: 40%;
+}
+
+#container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-lg-3{
+    border: 2px solid #f4f4f4;
+    
+}
+.col-lg-6{
+    border:2px;
+    border-color:#f4f4f4;
+    border-style: solid;
+}
+
+body{
+    background-image: url(../images/blur.jpg);
+}
+
+
+#textarea{
+    spellcheck:false;
+}
+
+
+#home{
+    
+    position: absolute;
+    top:50px;
+    right:200px;
+    
+}
+
+
+#uploadfiletag{
+   padding-left: 80px;
+}
+
+.datagrid-wrap.panel-body{
+    background-color:#eff2e7;
+}

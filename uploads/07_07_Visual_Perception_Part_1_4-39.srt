@@ -1,0 +1,315 @@
+1
+00:00:05,539 --> 00:00:07,461
+[MUSIC]. 
+In the previous lectures, we've been 
+
+2
+00:00:07,461 --> 00:00:11,903
+discussing data and visual mappings. 
+Now we're going to talk about the other 
+
+3
+00:00:11,903 --> 00:00:15,456
+end of the pipe line. 
+How that information is processed by 
+
+4
+00:00:15,456 --> 00:00:19,939
+human brain. 
+This is the first of three lectures on 
+
+5
+00:00:19,939 --> 00:00:25,706
+visual perception. 
+70% of our body's sense receptors reside 
+
+6
+00:00:25,706 --> 00:00:29,063
+in our eyes. 
+Our very language resonates with the 
+
+7
+00:00:29,063 --> 00:00:32,780
+importance of our eyes. 
+Metaphors to describe understanding often 
+
+8
+00:00:32,780 --> 00:00:36,780
+refer to vision. 
+I see, insight or illumination. 
+
+9
+00:00:36,780 --> 00:00:41,090
+Colin Ware stated in 2004. 
+They eye and the visual cortex of the 
+
+10
+00:00:41,090 --> 00:00:45,500
+brain form a massively parallel processor 
+that provides the highest bandwidth 
+
+11
+00:00:45,500 --> 00:00:50,710
+channel into human cognitive centers. 
+In these three lectures we're going to 
+
+12
+00:00:50,710 --> 00:00:55,350
+describe how it's important to understand 
+how visual perception works in order to 
+
+13
+00:00:55,350 --> 00:00:59,960
+effectively design visualization. 
+The first key principle to keep in mind 
+
+14
+00:00:59,960 --> 00:01:05,169
+is that the eye is not a camera. 
+A better metaphor for vision was given by 
+
+15
+00:01:05,169 --> 00:01:10,210
+Christopher Healey in 1995. 
+It's a dynamic and on going construction 
+
+16
+00:01:10,210 --> 00:01:13,060
+project. 
+It's important to keep this in mind as 
+
+17
+00:01:13,060 --> 00:01:15,720
+you go thru the next three lectures. 
+Because when you go design a 
+
+18
+00:01:15,720 --> 00:01:20,100
+visualization, if you think of the eye as 
+a camera, it can lead you to some eno, 
+
+19
+00:01:20,100 --> 00:01:24,460
+erroneous conclusions. 
+Attention is selective. 
+
+20
+00:01:24,460 --> 00:01:28,710
+We, we all know that. 
+it's filtered to a high degree. 
+
+21
+00:01:28,710 --> 00:01:33,500
+And it's really cognitive processes that 
+transform the visual information into 
+
+22
+00:01:33,500 --> 00:01:38,980
+something that we can comprehend. 
+The field of psychophysics is concerned 
+
+23
+00:01:38,980 --> 00:01:42,010
+with establishing quantitative 
+relationships between physical 
+
+24
+00:01:42,010 --> 00:01:46,130
+stimulation and perceptual events. 
+So we're going to be talking about some 
+
+25
+00:01:46,130 --> 00:01:49,045
+of the important discoveries made in this 
+field in the next three lectures. 
+
+26
+00:01:49,045 --> 00:01:54,750
+Let's think a little bit about how to use 
+perceptual properties. 
+
+27
+00:01:56,160 --> 00:02:00,170
+Information visualization should cause 
+what is meaningful to stand out. 
+
+28
+00:02:01,400 --> 00:02:07,270
+So what do you see in this image. 
+Can you see the 2 spots that differ from 
+
+29
+00:02:07,270 --> 00:02:10,670
+their surroundings? 
+Why do you see them? 
+
+30
+00:02:10,670 --> 00:02:14,340
+We're going to answer that question in 
+the next few slides and lectures. 
+
+31
+00:02:14,340 --> 00:02:17,700
+Some important differences between eyes 
+and cameras. 
+
+32
+00:02:18,770 --> 00:02:23,420
+Cameras have very good optics. 
+They have a single focus, they maintain a 
+
+33
+00:02:23,420 --> 00:02:28,500
+white balance and a single exposure. 
+And they also do what's known as a full 
+
+34
+00:02:28,500 --> 00:02:31,600
+image capture. 
+In another words, all the photons coming 
+
+35
+00:02:31,600 --> 00:02:35,440
+into the eye are captured with equal 
+importance and at the same time. 
+
+36
+00:02:36,450 --> 00:02:39,220
+The eyes on the other hand have 
+relatively poor optics. 
+
+37
+00:02:39,220 --> 00:02:42,830
+They're constantly scanning. 
+This is known as saccades, the shifting 
+
+38
+00:02:42,830 --> 00:02:47,230
+of your eyes to various positions There 
+constantly adjusting focus, there 
+
+39
+00:02:47,230 --> 00:02:50,890
+constantly adapting, both the white 
+balance and the exposure. 
+
+40
+00:02:50,890 --> 00:02:56,030
+What's really going on is mental 
+reconstruction of the image, sort of, as 
+
+41
+00:02:56,030 --> 00:02:59,720
+we'll find out it's not even a complete 
+image thats reconstructed. 
+
+42
+00:03:03,400 --> 00:03:08,110
+So here's one example. 
+Visual perception really isn't just 
+
+43
+00:03:08,110 --> 00:03:12,610
+camera work. 
+Looking at this checker board it's pretty 
+
+44
+00:03:12,610 --> 00:03:15,310
+clear that square A is darker than square 
+B, right? 
+
+45
+00:03:15,310 --> 00:03:24,840
+Turns out if you gray out the image, you 
+see the truth. 
+
+46
+00:03:24,840 --> 00:03:27,710
+Square A and square B have identical 
+pixel values. 
+
+47
+00:03:28,920 --> 00:03:31,850
+As a matter of fact when I first saw this 
+image I didn't believe it. 
+
+48
+00:03:31,850 --> 00:03:36,430
+I actually put the image in Photoshop and 
+used the Eyedropper tool in order to find 
+
+49
+00:03:36,430 --> 00:03:39,270
+out what the RGB values were of those two 
+squares. 
+
+50
+00:03:39,270 --> 00:03:44,520
+And yes indeed they are identical. 
+So you're welcome to do the same you can 
+
+51
+00:03:44,520 --> 00:03:47,290
+take a screen capture and test it out 
+yourself. 
+
+52
+00:03:47,290 --> 00:03:52,080
+But it's pretty interesting. 
+The human visual system is so dependent 
+
+53
+00:03:52,080 --> 00:03:56,590
+on context and upon reconstructing the 
+image that we see these two squares, 
+
+54
+00:03:56,590 --> 00:04:03,560
+which are identical as quite different. 
+Color is relative as are many other of 
+
+55
+00:04:03,560 --> 00:04:06,760
+our perceptions. 
+If you look at this slide, doesn't it 
+
+56
+00:04:06,760 --> 00:04:10,710
+look like the x on the left hand side is 
+gray and the one on the right hand side 
+
+57
+00:04:10,710 --> 00:04:14,180
+is yellow? 
+But if you go look at were they connect 
+
+58
+00:04:14,180 --> 00:04:17,600
+at the center bottom of the slide you'll 
+see that they're identical. 
+
+59
+00:04:17,600 --> 00:04:20,430
+And that's again because the eye 
+perceives differences. 
+
+60
+00:04:20,430 --> 00:04:28,030
+It does not perceive actual pixel values. 
+So in conclusion I hope you've taken away 
+
+61
+00:04:28,030 --> 00:04:31,269
+from this lecture that the eye is not a 
+camera. 
+
+62
+00:04:31,269 --> 00:04:34,610
+In the next 2 lectures, we're going to 
+discuss more about how understanding how 
+
+63
+00:04:34,610 --> 00:04:39,421
+the visual perception can help us develop 
+more effective visualizations 
+

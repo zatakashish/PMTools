@@ -1,0 +1,495 @@
+1
+00:00:05,955 --> 00:00:07,057
+[MUSIC]. 
+Hi Everyone. 
+
+2
+00:00:07,057 --> 00:00:11,457
+My name is Cecilia Aragon and I'll be 
+your guest lecturer this week. 
+
+3
+00:00:11,457 --> 00:00:15,717
+We're going to be talking about basic 
+principles of information visualization. 
+
+4
+00:00:15,717 --> 00:00:20,397
+This is in my opinion one of the most 
+important interesting and fun components 
+
+5
+00:00:20,397 --> 00:00:25,149
+of the data science pipeline. 
+We're going to be talking about how you 
+
+6
+00:00:25,149 --> 00:00:28,549
+take the data that you've collected and 
+analyzed, and then actually present it in 
+
+7
+00:00:28,549 --> 00:00:31,881
+a form that makes sense to the human 
+brain. 
+
+8
+00:00:31,881 --> 00:00:35,511
+I'm a professor here at the University of 
+Washington in the Department of Human 
+
+9
+00:00:35,511 --> 00:00:40,498
+Centered Design and Engineering. 
+And it'll be my pleasure to introduce you 
+
+10
+00:00:40,498 --> 00:00:45,736
+to this exciting subject. 
+My research interests lie in the visual 
+
+11
+00:00:45,736 --> 00:00:51,521
+presentation of very large, scientific 
+and social datasets. 
+
+12
+00:00:51,521 --> 00:00:55,501
+So, let's start with a few definitions. 
+The word visualization is extremely 
+
+13
+00:00:55,501 --> 00:00:58,384
+overloaded. 
+There are many possible meanings to the 
+
+14
+00:00:58,384 --> 00:01:01,684
+term so what are we talking about when we 
+say we're studying Information 
+
+15
+00:01:01,684 --> 00:01:06,310
+Visualization? 
+Well we want to consider the visual 
+
+16
+00:01:06,310 --> 00:01:11,800
+representation of information. 
+The goals of Information Visualization 
+
+17
+00:01:11,800 --> 00:01:15,820
+include the effective communication of 
+information or data, with clarity that 
+
+18
+00:01:15,820 --> 00:01:19,300
+means that the information should be 
+presented in a way that's easy to 
+
+19
+00:01:19,300 --> 00:01:26,040
+understand by a human. 
+With integrity, you present all the data 
+
+20
+00:01:26,040 --> 00:01:30,790
+and nothing but the data. 
+And you want to stimulate viewer 
+
+21
+00:01:30,790 --> 00:01:34,590
+engagement with the data. 
+Our focus in this course will be on 
+
+22
+00:01:34,590 --> 00:01:37,850
+effectiveness. 
+We're talking about the clear and 
+
+23
+00:01:37,850 --> 00:01:40,780
+effective presentation of data to the 
+human mind. 
+
+24
+00:01:42,720 --> 00:01:48,180
+Data visualization usually falls into 
+three academic categories. 
+
+25
+00:01:48,180 --> 00:01:53,246
+Information visualization, scientific 
+visualization and visual analytics. 
+
+26
+00:01:53,246 --> 00:02:00,510
+Information visualization typically 
+involves abstract information that may 
+
+27
+00:02:00,510 --> 00:02:04,670
+not have a position in space. 
+For examlpe, on the slide you can see a 
+
+28
+00:02:04,670 --> 00:02:07,946
+graph of stock prices around the year 
+2000. 
+
+29
+00:02:07,946 --> 00:02:14,350
+We graphed the price, the dollar amount 
+on the y-axis and time on the x axis. 
+
+30
+00:02:14,350 --> 00:02:18,860
+Scientific visualization usually involves 
+displaying data that has a physical 
+
+31
+00:02:18,860 --> 00:02:22,340
+position in space. 
+For example, here you see a methane 
+
+32
+00:02:22,340 --> 00:02:26,540
+combustion data set, where each of the 
+data points has a 3D location. 
+
+33
+00:02:27,960 --> 00:02:33,700
+Visual analytics is a combination of 
+highly interactive visual interfaces and 
+
+34
+00:02:33,700 --> 00:02:36,820
+sophisticated statistical learning 
+algorithms. 
+
+35
+00:02:36,820 --> 00:02:40,605
+In this course we're going to be talking 
+about basic principles of information 
+
+36
+00:02:40,605 --> 00:02:43,360
+visualizations. 
+We're not going to be talking about 
+
+37
+00:02:43,360 --> 00:02:48,970
+scientific visualization specifically, 
+nor about visual analytics, nor about the 
+
+38
+00:02:48,970 --> 00:02:54,420
+artistic field of visual design. 
+The principles, however, of information 
+
+39
+00:02:54,420 --> 00:02:58,680
+visualization that we are discussing are 
+applicable to all three domains. 
+
+40
+00:02:59,890 --> 00:03:05,060
+We will be discussing specifically this 
+week how to map data variables to visual 
+
+41
+00:03:05,060 --> 00:03:09,110
+attributes. 
+So, why is visualization important? 
+
+42
+00:03:09,110 --> 00:03:12,870
+Say you have a million numbers. 
+What's the best way to communicate that 
+
+43
+00:03:12,870 --> 00:03:18,450
+information to the human brain? 
+Well, imagine a table of a million 
+
+44
+00:03:18,450 --> 00:03:23,960
+numbers, it seems almost too vast to 
+comprehend, much less define meaningful 
+
+45
+00:03:23,960 --> 00:03:28,550
+trends or information about it. 
+But on the other hand, if you consider 
+
+46
+00:03:28,550 --> 00:03:32,950
+the number of pixels on your computer 
+screen it's typically around a million 
+
+47
+00:03:32,950 --> 00:03:35,774
+and you have no trouble understanding it 
+very quickly. 
+
+48
+00:03:35,774 --> 00:03:41,120
+And being able to, to act on the 
+information you [UNKNOWN], so the human 
+
+49
+00:03:41,120 --> 00:03:44,322
+visual system is the highest-bandwith 
+channel to the human brain. 
+
+50
+00:03:44,322 --> 00:03:47,900
+And it's the most efficient way to 
+present large amounts of information so 
+
+51
+00:03:47,900 --> 00:03:54,260
+they make sense. 
+Lets talk about a few examples, so may be 
+
+52
+00:03:54,260 --> 00:03:58,610
+the first use of visualization 
+historically was for eliciting knowledge 
+
+53
+00:03:58,610 --> 00:04:03,680
+from data, let's suppose you have a table 
+of numbers. 
+
+54
+00:04:03,680 --> 00:04:07,440
+We're, we'll start with a relatively 
+small table with only 50 rows, one for 
+
+55
+00:04:07,440 --> 00:04:10,970
+each state in the union, three columns in 
+each row. 
+
+56
+00:04:10,970 --> 00:04:15,480
+The name of the state, the percentage of 
+college graduates in that state, and the 
+
+57
+00:04:15,480 --> 00:04:19,410
+per capita income. 
+So you might have questions about this 
+
+58
+00:04:19,410 --> 00:04:22,720
+data, such as, which state has the 
+highest income? 
+
+59
+00:04:22,720 --> 00:04:26,240
+Is there a relationship between income 
+and education? 
+
+60
+00:04:26,240 --> 00:04:28,520
+Finally are there any outliers? 
+Are there any trends? 
+
+61
+00:04:30,140 --> 00:04:34,130
+Well obviously all the data is present, 
+and you could take your time looking at 
+
+62
+00:04:34,130 --> 00:04:37,170
+this data. 
+You could identify the highest and lowest 
+
+63
+00:04:37,170 --> 00:04:39,240
+numbers. 
+You could answer all these questions from 
+
+64
+00:04:39,240 --> 00:04:41,700
+the data. 
+Everything is presented here. 
+
+65
+00:04:41,700 --> 00:04:44,830
+But is this the most efficient way to 
+understand this data? 
+
+66
+00:04:46,970 --> 00:04:50,030
+Here's another way of presenting the data 
+in a scatter plot. 
+
+67
+00:04:50,030 --> 00:04:53,620
+We have per capita income on the x axis 
+and the percentage of college degrees on 
+
+68
+00:04:53,620 --> 00:04:57,540
+the y axis. 
+And, as you can see, the question of 
+
+69
+00:04:57,540 --> 00:05:00,500
+which state has the highest income is 
+instantly answered. 
+
+70
+00:05:00,500 --> 00:05:03,970
+We can see that Connecticut has the 
+highest per capita income. 
+
+71
+00:05:03,970 --> 00:05:08,800
+Similarly, it's clear there's a trend 
+that there's a correlation between per 
+
+72
+00:05:08,800 --> 00:05:12,100
+capita income and the percentage of 
+college of degrees and there is a couple 
+
+73
+00:05:12,100 --> 00:05:17,070
+of interesting outliers. 
+Nevada has a relatively high per capita 
+
+74
+00:05:17,070 --> 00:05:20,270
+income but a very low percentage of 
+college graduates. 
+
+75
+00:05:20,270 --> 00:05:25,250
+So, all the information is presented in 
+both of these forms but the, the visual 
+
+76
+00:05:25,250 --> 00:05:32,130
+representation is, is much more efficient 
+at presenting meaning to the human mind. 
+
+77
+00:05:35,770 --> 00:05:39,520
+Well, so, okay, the first question that 
+might come up is, well, yeah, but all 
+
+78
+00:05:39,520 --> 00:05:43,850
+this information could more easily have 
+been accomplished by analyzing the data 
+
+79
+00:05:43,850 --> 00:05:46,640
+with a statistical program. 
+You could find the maximum. 
+
+80
+00:05:46,640 --> 00:05:50,120
+You can find the minimum. 
+You can find the regression line. 
+
+81
+00:05:50,120 --> 00:05:55,130
+However, it turns out the human brain is 
+one of the best pattern matching tools 
+
+82
+00:05:55,130 --> 00:05:58,040
+that we have. 
+Actually, it's, we're, the human brain's 
+
+83
+00:05:58,040 --> 00:06:03,650
+so far is still better at detecting 
+patterns in data than any of our most 
+
+84
+00:06:03,650 --> 00:06:05,570
+sophisticated machine learning 
+algorithms. 
+
+85
+00:06:06,900 --> 00:06:11,870
+So an immediate question that arises is. 
+Why not just use a statistical program 
+
+86
+00:06:11,870 --> 00:06:16,530
+and identify the minimum, the maximum, 
+the trend lines and go from there? 
+
+87
+00:06:16,530 --> 00:06:23,820
+Why bother with a visual representation? 
+The answer is simply, the graphs reveal 
+
+88
+00:06:23,820 --> 00:06:29,850
+data that statistics may not. 
+So, here's a famous example, Anscombe's 
+
+89
+00:06:29,850 --> 00:06:35,150
+Quartet. 
+Here you have four small data sets that 
+
+90
+00:06:35,150 --> 00:06:40,180
+are quite different, as you can see by 
+looking at them, but they have identical 
+
+91
+00:06:40,180 --> 00:06:42,750
+linear models. 
+That is, the identical means and the 
+
+92
+00:06:42,750 --> 00:06:46,510
+identical trend lines. 
+Again, you could just present the data 
+
+93
+00:06:46,510 --> 00:06:52,110
+in, in tabular form, but see how much 
+more information we can learn about 
+
+94
+00:06:52,110 --> 00:06:55,810
+these, these individual data sets, just 
+by looking at the data. 
+
+95
+00:06:55,810 --> 00:07:00,145
+So even though, we have identical means, 
+identical regression lines. 
+
+96
+00:07:00,145 --> 00:07:04,760
+These data sets are quite different. 
+So, so statistics may not tell us 
+
+97
+00:07:04,760 --> 00:07:11,380
+everything about a particular data set. 
+I hope I've managed to wet your appetite 
+
+98
+00:07:11,380 --> 00:07:15,750
+for this coming weeks set of slides. 
+I'm going to stop here and we'll continue 
+
+99
+00:07:15,750 --> 00:07:17,770
+on with more examples in the next 
+lecture. 
+
